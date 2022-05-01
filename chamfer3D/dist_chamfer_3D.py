@@ -30,9 +30,9 @@ class chamfer_3DFunction(Function):
     @staticmethod
     def forward(ctx, xyz1, xyz2):
         batchsize, n, dim = xyz1.size()
-        assert dim==3, "Wrong last dimension for the chamfer distance 's input! Check with .size()"
+        # assert dim==3, "Wrong last dimension for the chamfer distance 's input! Check with .size()"
         _, m, dim = xyz2.size()
-        assert dim==3, "Wrong last dimension for the chamfer distance 's input! Check with .size()"
+        # assert dim==3, "Wrong last dimension for the chamfer distance 's input! Check with .size()"
         device = xyz1.device
 
         device = xyz1.device
